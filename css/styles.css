@@ -1,3 +1,6 @@
+/* ===========================
+   GLOBAL
+=========================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +9,7 @@
 }
 
 body {
-    background: #f5f2f0; /* Fondo suave */
+    background: linear-gradient(135deg, #fff5f5, #f9fafb);
     min-height: 100vh;
     padding: 30px;
 }
@@ -23,6 +26,9 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* ===========================
+   PROGRESS BAR
+=========================== */
 .progress-container {
     background: white;
     border-radius: 12px;
@@ -51,6 +57,11 @@ h1 {
     transition: width 0.4s ease;
 }
 
+.progress-text {
+    font-size: 0.9em;
+    color: #555;
+}
+
 .reset-progress-btn {
     margin: 15px auto 30px;
     display: block;
@@ -61,29 +72,14 @@ h1 {
     cursor: pointer;
 }
 
-/* CALENDARIO */
+/* ===========================
+   CALENDAR GRID
+=========================== */
 .calendar-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 cards por fila */
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-
-/* Colores individuales para cada card */
-.day-card:nth-child(1) { background: #ffd6d6; }
-.day-card:nth-child(2) { background: #ffe0b2; }
-.day-card:nth-child(3) { background: #fff9c4; }
-.day-card:nth-child(4) { background: #c8e6c9; }
-.day-card:nth-child(5) { background: #b3e5fc; }
-.day-card:nth-child(6) { background: #d1c4e9; }
-.day-card:nth-child(7) { background: #f8bbd0; }
-.day-card:nth-child(8) { background: #ffccbc; }
-.day-card:nth-child(9) { background: #e0f7fa; }
-.day-card:nth-child(10){ background: #f0f4c3; }
-.day-card:nth-child(11){ background: #ffe082; }
-.day-card:nth-child(12){ background: #b2dfdb; }
-.day-card:nth-child(13){ background: #c5cae9; }
-.day-card:nth-child(14){ background: #f48fb1; }
-.day-card:nth-child(15){ background: #dcedc8; }
 
 .day-card {
     border-radius: 16px;
@@ -94,7 +90,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
-    color: #333;
+    color: white; /* para que los textos se vean sobre los colores dinámicos */
 }
 
 .day-card:hover {
@@ -102,11 +98,19 @@ h1 {
 }
 
 .day-card.completed {
-    background: #086522;
+    background: #086522 !important;
     color: white;
 }
 
-/* MODAL */
+.card.locked {
+    opacity: 0.4;
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
+/* ===========================
+   MODAL
+=========================== */
 .modal {
     position: fixed;
     inset: 0;
@@ -197,10 +201,4 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.card.locked {
-    opacity: 0.4;
-    pointer-events: none;
-    filter: grayscale(1);
 }
