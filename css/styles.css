@@ -63,16 +63,16 @@ h1 {
 
 .calendar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    gap: 20px; /* espacio entre cards */
 }
 
 .day-card {
     background: white;
     border-radius: 16px;
-    padding: 35px;
+    padding: 25px; /* un poco menos que antes para que entren mejor */
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em; /* ligeramente más pequeño para que no se vea apretado */
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -84,7 +84,7 @@ h1 {
 }
 
 .day-card.completed {
-    background: #0b7a35;
+    background: #086522;
     color: white;
 }
 
