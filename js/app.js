@@ -25,8 +25,17 @@ function saveCompletedDays(days) {
 // ==============================
 // CALENDAR
 // ==============================
+const cardColors = [
+    "#ffd6d6", "#ffe0b2", "#fff9c4", "#c8e6c9", "#b3e5fc",
+    "#d1c4e9", "#f8bbd0", "#ffccbc", "#e0f7fa", "#f0f4c3",
+    "#ffe082", "#b2dfdb", "#c5cae9", "#f48fb1", "#dcedc8"
+];
+
 function createCalendar() {
     calendarGrid.innerHTML = "";
+    calendarGrid.style.background = "#fdf6f6"; // fondo del grid
+    calendarGrid.style.padding = "20px";
+    calendarGrid.style.borderRadius = "16px";
 
     const completedDays = getCompletedDays();
     const unlockedDay = completedDays.length + 1;
@@ -36,12 +45,17 @@ function createCalendar() {
         card.className = "day-card";
         card.textContent = task.day;
 
-        // ✅ completado
+        // 🔹 Color de cada card
+        card.style.backgroundColor = cardColors[task.day - 1];
+
+        // ✅ Completado
         if (completedDays.includes(task.day)) {
             card.classList.add("completed");
+            card.style.backgroundColor = "#086522"; // verde completado
+            card.style.color = "white";
         }
 
-        // 🔒 PASO 2 — bloqueo
+        // 🔒 Bloqueo de días futuros
         if (task.day > unlockedDay) {
             card.classList.add("locked");
         }
@@ -49,6 +63,18 @@ function createCalendar() {
         card.addEventListener("click", () => {
             if (task.day > unlockedDay) return;
             openModal(task);
+        });
+
+        // Hover
+        card.addEventListener("mouseenter", () => {
+            if (!card.classList.contains("completed")) {
+                card.style.opacity = "0.8";
+            }
+        });
+        card.addEventListener("mouseleave", () => {
+            if (!card.classList.contains("completed")) {
+                card.style.opacity = "1";
+            }
         });
 
         calendarGrid.appendChild(card);
