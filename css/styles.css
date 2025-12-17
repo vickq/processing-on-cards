@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #fef9f9, #f4f6f8);
+    background: #f5f2f0; /* Fondo suave */
     min-height: 100vh;
     padding: 30px;
 }
@@ -19,7 +19,7 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #9b0030; /* ligeramente distinto al original */
+    color: #800020;
     margin-bottom: 10px;
 }
 
@@ -33,7 +33,7 @@ h1 {
 }
 
 .progress-bar {
-    background: #f5e6e6;
+    background: #f0e6e6;
     height: 28px;
     border-radius: 14px;
     overflow: hidden;
@@ -42,7 +42,7 @@ h1 {
 
 .progress-fill {
     height: 100%;
-    background: #0b7a35; /* verde más brillante */
+    background: #086522;
     color: white;
     font-weight: 600;
     display: flex;
@@ -61,22 +61,40 @@ h1 {
     cursor: pointer;
 }
 
+/* CALENDARIO */
 .calendar-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-    gap: 20px; /* espacio entre cards */
+    grid-template-columns: repeat(5, 1fr); /* 5 cards por fila */
+    gap: 20px;
 }
 
+/* Colores individuales para cada card */
+.day-card:nth-child(1) { background: #ffd6d6; }
+.day-card:nth-child(2) { background: #ffe0b2; }
+.day-card:nth-child(3) { background: #fff9c4; }
+.day-card:nth-child(4) { background: #c8e6c9; }
+.day-card:nth-child(5) { background: #b3e5fc; }
+.day-card:nth-child(6) { background: #d1c4e9; }
+.day-card:nth-child(7) { background: #f8bbd0; }
+.day-card:nth-child(8) { background: #ffccbc; }
+.day-card:nth-child(9) { background: #e0f7fa; }
+.day-card:nth-child(10){ background: #f0f4c3; }
+.day-card:nth-child(11){ background: #ffe082; }
+.day-card:nth-child(12){ background: #b2dfdb; }
+.day-card:nth-child(13){ background: #c5cae9; }
+.day-card:nth-child(14){ background: #f48fb1; }
+.day-card:nth-child(15){ background: #dcedc8; }
+
 .day-card {
-    background: white;
     border-radius: 16px;
-    padding: 25px; /* un poco menos que antes para que entren mejor */
+    padding: 35px;
     text-align: center;
-    font-size: 1.2em; /* ligeramente más pequeño para que no se vea apretado */
+    font-size: 1.4em;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
+    color: #333;
 }
 
 .day-card:hover {
@@ -86,12 +104,6 @@ h1 {
 .day-card.completed {
     background: #086522;
     color: white;
-}
-
-.card.locked {
-    opacity: 0.4;
-    pointer-events: none;
-    filter: grayscale(1);
 }
 
 /* MODAL */
@@ -124,7 +136,7 @@ h1 {
 }
 
 .modal-day-number {
-    background: #9b0030;
+    background: #800020;
     color: white;
     display: inline-block;
     padding: 8px 20px;
@@ -134,7 +146,7 @@ h1 {
 
 .modal-title {
     font-size: 2em;
-    color: #9b0030;
+    color: #800020;
     margin-bottom: 10px;
 }
 
@@ -146,17 +158,17 @@ h1 {
 }
 
 .difficulty.easy {
-    background: #0b7a35;
+    background: #086522;
     color: white;
 }
 
 .difficulty.medium {
-    background: #3e5f6e;
+    background: #4a6b7c;
     color: white;
 }
 
 .difficulty.hard {
-    background: #9b0030;
+    background: #800020;
     color: white;
 }
 
@@ -174,7 +186,7 @@ h1 {
 }
 
 .complete-btn.completed {
-    background: #0b7a35;
+    background: #086522;
 }
 
 .skip-btn {
@@ -187,3 +199,8 @@ h1 {
     cursor: pointer;
 }
 
+.card.locked {
+    opacity: 0.4;
+    pointer-events: none;
+    filter: grayscale(1);
+}
