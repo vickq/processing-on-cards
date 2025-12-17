@@ -26,10 +26,23 @@ function saveCompletedDays(days) {
 // CALENDAR
 // ==============================
 const cardColors = [
-    "#e0f7fa", "#b2ebf2", "#80deea", "#4dd0e1", "#26c6da",
-    "#00bcd4", "#00acc1", "#0097a7", "#00838f", "#006064",
-    "#b3e5fc", "#81d4fa", "#4fc3f7", "#29b6f6", "#0288d1"
+    "#e6f2e6", 
+    "#cce6cc",
+    "#b3d9b3",
+    "#99cc99",
+    "#80bf80",
+    "#66b266",
+    "#4da64d",
+    "#339933",
+    "#1a8c1a",
+    "#007f00", 
+    "#a67c52", 
+    "#996633",
+    "#804d26",
+    "#663300",
+    "#4d2600"  
 ];
+
 
 function createCalendar() {
     calendarGrid.innerHTML = "";
