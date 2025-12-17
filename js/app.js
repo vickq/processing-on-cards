@@ -148,6 +148,7 @@ function updateCompleteButton() {
 }
 
 function updateProgress() {
+    const completedDays = getCompletedDays();
     const completed = getCompletedDays().length;
     const unlockedDay = completedDays + 1;
     const total = tasks.length;
