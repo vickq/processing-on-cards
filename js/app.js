@@ -26,21 +26,9 @@ function saveCompletedDays(days) {
 // CALENDAR
 // ==============================
 const cardColors = [
-    "#e6f2e6", 
-    "#cce6cc",
-    "#b3d9b3",
-    "#99cc99",
-    "#80bf80",
-    "#66b266",
-    "#4da64d",
-    "#339933",
-    "#1a8c1a",
-    "#007f00", 
-    "#a67c52", 
-    "#996633",
-    "#804d26",
-    "#663300",
-    "#4d2600"  
+    "#f0f9f0", "#e0f3e0", "#d1edcf", "#c1e7bf", "#b2e1af",  // fila 1 (verde más claro)
+    "#a3db9f", "#94d38f", "#85cd7f", "#76c76f", "#67c05f",  // fila 2 (verde medio a oscuro)
+    "#c7a885", "#b68f6c", "#a57653", "#955d3a", "#844422"   // fila 3 (marrón claro a oscuro)
 ];
 
 
