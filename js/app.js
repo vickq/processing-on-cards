@@ -28,17 +28,29 @@ function saveCompletedDays(days) {
 function createCalendar() {
     calendarGrid.innerHTML = "";
 
+    const completedDays = getCompletedDays();
+    const unlockedDay = completedDays.length + 1;
+
     tasks.forEach(task => {
         const card = document.createElement("div");
         card.className = "day-card";
         card.textContent = task.day;
 
-        const completedDays = getCompletedDays();
+        // ✅ completado
         if (completedDays.includes(task.day)) {
             card.classList.add("completed");
         }
 
-        card.addEventListener("click", () => openModal(task));
+        // 🔒 PASO 2 — bloqueo
+        if (task.day > unlockedDay) {
+            card.classList.add("locked");
+        }
+
+        card.addEventListener("click", () => {
+            if (task.day > unlockedDay) return;
+            openModal(task);
+        });
+
         calendarGrid.appendChild(card);
     });
 
