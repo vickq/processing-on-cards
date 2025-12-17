@@ -81,17 +81,22 @@ h1 {
     gap: 20px;
 }
 
-.day-card {
-    border-radius: 16px;
-    padding: 35px;
-    text-align: center;
-    font-size: 1.4em;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    color: white; /* para que los textos se vean sobre los colores dinámicos */
-}
+ .day-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+        }
 
 .day-card:hover {
     transform: translateY(-6px);
