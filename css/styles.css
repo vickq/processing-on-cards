@@ -223,3 +223,13 @@ h1 {
     padding: 0 !important;
     margin-top: 40px;
 }
+
+.calendar-grid-wrapper,
+.calendar-container,
+.calendar-panel {
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
