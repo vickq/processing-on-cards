@@ -213,3 +213,13 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* ===========================
+   REMOVE WHITE BACKGROUND BEHIND CARDS
+=========================== */
+
+.calendar-grid {
+    background: transparent !important;
+    padding: 0 !important;
+    margin-top: 40px;
+}
