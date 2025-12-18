@@ -9,14 +9,14 @@
 }
 
 body {
-    background: linear-gradient(135deg, #fff5f5, #f9fafb);
+    background: linear-gradient(180deg, #d9a6a1, #c28b87);
     min-height: 100vh;
-    padding: 30px;
+    padding: 60px 40px;
 }
 
 .container {
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -31,10 +31,10 @@ h1 {
 =========================== */
 .progress-container {
     background: white;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 30px 40px;
+    margin: 40px auto 60px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     text-align: center;
 }
 
@@ -63,13 +63,17 @@ h1 {
 }
 
 .reset-progress-btn {
-    margin: 15px auto 30px;
-    display: block;
-    padding: 8px 16px;
-    border-radius: 20px;
-    background: #ffffffcc;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: white;
     border: 1px solid #ddd;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     cursor: pointer;
+    font-size: 0.85em;
+    z-index: 999;
 }
 
 /* ===========================
@@ -78,25 +82,27 @@ h1 {
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 24px;
+    padding-bottom: 60px;
 }
 
- .day-card {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-            min-height: 180px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            text-align: left;
-        }
+.day-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+    min-height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
 
 .day-card:hover {
     transform: translateY(-6px);
