@@ -26,11 +26,10 @@ function saveCompletedDays(days) {
 // CALENDAR
 // ==============================
 const cardColors = [
-    "#f0f9f0", "#e0f3e0", "#d1edcf", "#c1e7bf", "#b2e1af",  // fila 1 (verde más claro)
-    "#a3db9f", "#94d38f", "#85cd7f", "#76c76f", "#67c05f",  // fila 2 (verde medio a oscuro)
-    "#c7a885", "#b68f6c", "#a57653", "#955d3a", "#844422"   // fila 3 (marrón claro a oscuro)
+    "#C9B8A4", "#B89B72", "#A47C48", "#7A8F6A", "#B35C44",  // fila 1 (arena, beige, caramelo, oliva, terracota)
+    "#8F6B3E", "#9C7A5E", "#6F4E37", "#8C4A3A", "#5C3A21",  // fila 2 (tierra seca, arcilla, café, óxido, marrón oscuro)
+    "#B89B72", "#7A8F6A", "#A47C48", "#9C7A5E", "#6F4E37"   // fila 3 (repetidos para completar)
 ];
-
 
 function createCalendar() {
     calendarGrid.innerHTML = "";
