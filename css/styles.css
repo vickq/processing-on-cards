@@ -9,7 +9,11 @@
 }
 
 body {
-    background: linear-gradient(180deg, #d9a6a1, #c28b87);
+    background: linear-gradient(
+        180deg,
+        #EFE4DA,
+        #E3D3C3
+    );
     min-height: 100vh;
     padding: 60px 40px;
 }
