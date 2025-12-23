@@ -118,11 +118,36 @@ h1 {
     color: white;
 }
 
-.card.locked {
+.day-card.has-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.day-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.day-card.has-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65); /* 👈 claridad */
+    z-index: 1;
+}
+
+.day-card.locked {
     opacity: 0.4;
     pointer-events: none;
     filter: grayscale(1);
 }
+
+.day-card.completed::before {
+    display: none;
+}
+
+
 
 /* ===========================
    MODAL
