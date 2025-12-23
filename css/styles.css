@@ -137,17 +137,11 @@ h1 {
     z-index: 1;
 }
 
-.day-card.locked {
+.card.locked {
     opacity: 0.4;
     pointer-events: none;
     filter: grayscale(1);
 }
-
-.day-card.completed::before {
-    display: none;
-}
-
-
 
 /* ===========================
    MODAL
