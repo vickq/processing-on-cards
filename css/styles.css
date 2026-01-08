@@ -53,7 +53,7 @@ h1 {
 
 .progress-fill {
     height: 100%;
-    background: #086522;
+    background: #6BBF59;
     color: white;
     font-weight: 600;
     display: flex;
@@ -117,7 +117,7 @@ h1 {
 }
 
 .day-card.completed {
-    background: #086522 !important;
+    background: #6BBF59 !important;
     color: white;
 }
 
@@ -159,7 +159,7 @@ h1 {
 }
 
 .modal-day-number {
-    background: #800020;
+    background: #E1D2A6;
     color: white;
     display: inline-block;
     padding: 8px 20px;
@@ -169,7 +169,7 @@ h1 {
 
 .modal-title {
     font-size: 2em;
-    color: #800020;
+    color: #E1D2A6;
     margin-bottom: 10px;
 }
 
@@ -181,17 +181,17 @@ h1 {
 }
 
 .difficulty.easy {
-    background: #086522;
+    background: #F2EADF;
     color: white;
 }
 
 .difficulty.medium {
-    background: #4a6b7c;
+    background: #F2EADF;
     color: white;
 }
 
 .difficulty.hard {
-    background: #800020;
+    background: #F2EADF;
     color: white;
 }
 
@@ -209,7 +209,7 @@ h1 {
 }
 
 .complete-btn.completed {
-    background: #086522;
+    background: #6BBF59;
 }
 
 .skip-btn {
