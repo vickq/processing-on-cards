@@ -26,9 +26,9 @@ function saveCompletedDays(days) {
 // CALENDAR
 // ==============================
 const cardColors = [
-  "#FF6A88", "#FF9A3C", "#C77DFF", "#7B5CFF", "#4D96FF",  // fila 1 (rosa, naranja, violeta, violeta deep, azul)
-  "#FF8FAB", "#FFC75F", "#B28DFF", "#5E60CE", "#48CAE4",  // fila 2 (rosa pastel, amarillo suave, lavanda, azul violeta, celeste)
-  "#FF9A3C", "#C77DFF", "#7B5CFF", "#4D96FF", "#48CAE4"   // fila 3 (repetidos para completar)
+  "#FF8FA3", "#FFB36B", "#D6A8FF", "#9B8CFF", "#7BB4FF",  // fila 1 (rosa suave, durazno, lila, violeta soft, azul claro)
+  "#FFB3C6", "#FFE0A6", "#E0CCFF", "#7A7EE6", "#8FD3E8",  // fila 2 (rosa pastel, crema, lavanda, azul violeta suave, celeste)
+  "#FFB36B", "#D6A8FF", "#9B8CFF", "#7BB4FF", "#8FD3E8"   // fila 3 (repetidos para completar)
 ];
 
 function createCalendar() {
