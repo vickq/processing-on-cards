@@ -137,7 +137,6 @@ h1 {
 .day-card.locked {
     opacity: 0.4;
     pointer-events: none;
-    filter: grayscale(1);
 }
 
 
