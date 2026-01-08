@@ -53,7 +53,7 @@ h1 {
 
 .progress-fill {
     height: 100%;
-    background: #6BBF59;
+    background: #5FAE6E;
     color: white;
     font-weight: 600;
     display: flex;
@@ -126,7 +126,7 @@ h1 {
 =========================== */
 
 .day-card.completed {
-    background: #6BBF59 !important;
+    background: #5FAE6E !important;
     color: white;
 }
 
@@ -223,7 +223,7 @@ h1 {
 }
 
 .complete-btn.completed {
-    background: #6BBF59;
+    background: #5FAE6E;
 }
 
 .skip-btn {
