@@ -99,6 +99,7 @@ h1 {
 =========================== */
 
 .day-card {
+    background: #FAFAFF;
     border-radius: 16px;
     padding: 20px;
     cursor: pointer;
