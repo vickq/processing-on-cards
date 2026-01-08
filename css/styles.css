@@ -11,8 +11,8 @@
 body {
     background: linear-gradient(
         180deg,
-        #EFE4DA,  /* arena clara */
-        #E3D3C3   /* arena cálida */
+        #FAFAFF,  /* arena clara */
+        #F2EADF   /* arena cálida */
     );
     min-height: 100vh;
     padding: 60px 40px;
