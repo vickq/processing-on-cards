@@ -44,7 +44,7 @@ h1 {
 }
 
 .progress-bar {
-    background: #6F7F5A;
+    background: #F2EADF;
     height: 28px;
     border-radius: 14px;
     overflow: hidden;
@@ -53,7 +53,7 @@ h1 {
 
 .progress-fill {
     height: 100%;
-    background: #086522;
+    background: #6F7F5A;
     color: white;
     font-weight: 600;
     display: flex;
