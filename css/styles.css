@@ -94,13 +94,16 @@ h1 {
     padding-bottom: 60px;
 }
 
+/* ===========================
+   DAY CARDS
+=========================== */
+
 .day-card {
-    background: white;
     border-radius: 16px;
     padding: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
     position: relative;
     overflow: hidden;
     min-height: 170px;
@@ -110,22 +113,33 @@ h1 {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+    color: #2f2f2f;
 }
 
 .day-card:hover {
     transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
+
+/* ===========================
+   COMPLETED
+=========================== */
 
 .day-card.completed {
     background: #6BBF59 !important;
     color: white;
 }
 
-.card.locked {
+/* ===========================
+   LOCKED
+=========================== */
+
+.day-card.locked {
     opacity: 0.4;
     pointer-events: none;
     filter: grayscale(1);
 }
+
 
 /* ===========================
    MODAL
