@@ -73,13 +73,16 @@ h1 {
     right: 24px;
     padding: 10px 16px;
     border-radius: 12px;
-    background: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background: #FAFAFF;
+    border: 1px solid rgba(58, 46, 95, 0.15);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     cursor: pointer;
     font-size: 0.85em;
+    color: #3A2E5F;
     z-index: 999;
+    transition: all 0.2s ease;
 }
+
 
 /* ===========================
    CALENDAR GRID
